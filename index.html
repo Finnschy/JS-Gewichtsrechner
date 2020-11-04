@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <section>
     <h1>Idealgewichtsrechner</h1>
-    <form action="">
-        <label for="groesse">Körpergröße</label>
+        
+        <form action="">
+            <label for="groesse">Körpergröße</label>
+            <br>
+            <input type="number" name="groesse" id="groesse" placeholder="Körpergröße">
+            <br>
+            <label for="alter">Alter</label>
+            <br>
+            <input type="number" name="alter" id="alter" placeholder="Alter">
+            <br>
+            <label for="koerperbau">Körperbau</label>
+            <br>
+            <input type="radio" name="koerperbau" id="breit" checked>
+            <label for="Breit">Breit</label>
+            <br>
+            <input type="radio" name="koerperbau" id="schmal">
+            <label for="schmal">Schmal</label>
+            <br>
+            <input type="submit" value="Submit" onclick="gewichtRechner()">
+        </form>
+        
         <br>
-        <input type="number" name="groesse" id="groesse">
-        <br>
-        <label for="alter">Alter</label>
-        <br>
-        <input type="number" name="alter" id="alter">
-        <br>
-        <label for="koerperbau">Körperbau</label>
-        <br>
-        <input type="radio" name="koerperbau" id="breit">
-        <label for="Breit">Breit</label>
-        <br>
-        <input type="radio" name="koerperbau" id="schmal">
-        <label for="schmal">Schmal</label>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
+        <h2>Das Idealgewicht:</h2>
+        <p id="output"></p>
+
+    </section>
 
 
-
-
-    <script src="assets/js/main.js"></script>
+            <script src="assets/js/main.js"></script>
 </body>
+
 </html>

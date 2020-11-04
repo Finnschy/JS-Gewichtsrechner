@@ -1,5 +1,35 @@
 * {
     margin: 0;
     padding: 0;
-    
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    border: .5rem solid black;
+    max-width: 30%;
+    margin: 5% auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 5% 0 2% 0;
+}
+
+form, h2, p {
+    margin: 0 0 5% 10%;
+}
+
+input[type=number] {
+    padding: .5%;
+}
+
+label {
+    display: inline-block;
+    margin: 5% 0 1% 0;
+}
+
+input[type=submit] {
+    padding: 1.5% 3%;
+    margin: 2% 0 0 0;
 }
